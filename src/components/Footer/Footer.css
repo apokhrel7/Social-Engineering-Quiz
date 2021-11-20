@@ -12,15 +12,3 @@
 .footer:hover {
   color: #00f;
 }
-
-footer {
-  background-color: #0b0e21;
-  color: white;
-  letter-spacing: 1px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  text-align: center;
-}
