@@ -7,7 +7,7 @@ const Footer = () => {
         href="https://github.com/Joey-mi/unessay20"
         style={{ cursor: "pointer" }}
       >
-        Emir Avci, Roberto Zaghini, Joanne Millard , Anish Pokhrel, Amirreza //
+        Emir Avci, Roberto Zaghini, Joanne Millard , Anish Pokhrel, Amirreza
         Pazira
       </a>
     </div>
