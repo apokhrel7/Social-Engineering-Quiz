@@ -1,49 +1,46 @@
-import React from "react";
-import { connect } from "react-redux";
-import { browserHistory, Link } from "react-router";
+import { Button } from "@material-ui/core";
+import { Container } from "@material-ui/core";
+import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
-class Home extends React.Component {
-  static propTypes = {
-    isAuthenticated: React.PropTypes.bool.isRequired,
+const Home = () => {
+  const navigate = useNavigate();
+
+  const sendSubmit = () => {
+    navigate.push("/quiz");
   };
-  render() {
-    return (
-      <div className="aboutWrapper">
-        {this.props.isAuthenticated ? (
-          <h1>
-            Welcome to <b>Quiz-it</b> {this.props.user}!
-          </h1>
-        ) : (
-          <h1>
-            Welcome to <b>Quiz-it</b>
-          </h1>
-        )}
+  return (
+    <Container className="content">
+      <h1 id="quiz-title">Phishing Quiz</h1>
+      <h2 class="question-text">
+        Do you think you can beat our phishing quiz?
+      </h2>
+      <p className="description">
+        {" "}
+        There are many social engineering attacks on internet however not all of
+        them are good enough to trick users. However there are some scams that
+        are identical to original websites and usually most of the users get
+        tricked by them.
+      </p>
+      <p className="description">
+        Do you think you are smart enough to handle these attacks?
+      </p>
+      <p className="description">
+        We are challenging you with our phishing quiz which will show you
+        examples of really good social engineering attacks on internet. We hope
+        you can pass!
+      </p>
+      <p>""</p>
+      <Button
+        variant="contained"
+        color="primary"
+        size="large"
+        onClick={sendSubmit}
+      >
+        Start Quiz
+      </Button>
+    </Container>
+  );
+};
 
-        {!this.props.isAuthenticated && (
-          <div className="description">
-            <p>
-              You can go ahead and view <Link to="quiz">existing quizzes</Link>{" "}
-              or login with GitHub to create your own quizzes. If you want your
-              score to be recorded on the leaderboard, be sure to login before
-              taking the quiz. Enjoy! <i className="em em-smile"></i>
-            </p>
-          </div>
-        )}
-
-        {this.props.isAuthenticated && (
-          <div className="description">
-            <p>
-              This app will help you learn React and Redux, awesome new cutting
-              edge web technologies! Feel free to go ahead and{" "}
-              <Link to="quiz">take the Quiz</Link> to test your React skills, or
-              you can just use this app to{" "}
-              <Link to="create">create your own quizzes</Link> on any topic!
-              Enjoy!
-            </p>
-          </div>
-        )}
-      </div>
-    );
-  }
-}
-export default About;
+export default Home;

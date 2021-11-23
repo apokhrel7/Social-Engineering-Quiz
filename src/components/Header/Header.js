@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/" className="link">
-        Home Page{" "}
+        Social Engineering Quiz{" "}
       </Link>
       <hr className="divider" />
     </div>
