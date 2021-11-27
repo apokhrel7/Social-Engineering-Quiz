@@ -7,7 +7,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const sendSubmit = () => {
-    navigate("/quiz");
+    navigate("/quiz3");
   };
   return (
     <Container className="content">
