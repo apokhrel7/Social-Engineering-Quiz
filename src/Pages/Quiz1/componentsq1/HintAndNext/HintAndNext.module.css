@@ -1,0 +1,28 @@
+.btnNext {
+  display: inline-block;
+  justify-content: center;
+  font: inherit;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #828282;
+  color: white;
+  border: 1px solid rgba(15, 5, 46, 0.603);
+  text-transform: uppercase;
+  box-shadow: 0x 2px 2px lightgray;
+  margin-right: 540px;
+}
+
+.btnHint {
+  display: inline-block;
+  justify-content: center;
+  font: inherit;
+  padding: 0.5rem 1.0rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #828282;
+  color: white;
+  border: 1px solid rgba(15, 5, 46, 0.603);
+  margin-right: 500px;
+
+}

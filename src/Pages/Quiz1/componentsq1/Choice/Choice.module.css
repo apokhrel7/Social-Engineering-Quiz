@@ -1,0 +1,27 @@
+.btnA {
+  display: inline-block;
+  justify-content: center;
+  font: inherit;
+  padding: 0.5rem 3.0rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #828282;
+  color: white;
+  border: 1px solid rgba(15, 5, 46, 0.603);
+  margin-right: 500px;
+  margin-left: 0px;
+}
+
+.btnB {
+  display: inline-block;
+  justify-content: center;
+  font: inherit;
+  padding: 0.5rem 3.0rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #828282;
+  color: white;
+  border: 1px solid rgba(15, 5, 46, 0.603);
+  margin-right: 0px;
+
+}
