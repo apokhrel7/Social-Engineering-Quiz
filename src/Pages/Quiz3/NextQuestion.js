@@ -7,7 +7,7 @@ function NextQuestion() {
   const navigate = useNavigate();
 
   const sendSubmit = () => {
-    navigate("/quiz4");
+    navigate("/result");
   };
   return (
     <Button
