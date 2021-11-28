@@ -1,12 +1,11 @@
 import * as React from "react";
-import Backdrop from "@mui/material/Backdrop";
+import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import Backdrop from "@mui/material/Backdrop";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { styled } from "@mui/material/styles";
-import { purple } from "@mui/material/colors";
+import { HintStyles } from "./Styling";
 
 const style = {
   position: "absolute",
@@ -19,20 +18,7 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-const HintButton = styled(Button)(({ theme }) => ({
-  color: theme.palette.getContrastText(purple[500]),
-  backgroundColor: purple[500],
-  borderRadius: 8,
-  maxWidth: "600px",
-  maxHeight: "35px",
-  minWidth: "600px",
-  minHeight: "35px",
-  "&:hover": {
-    backgroundColor: purple[700],
-    padding: "10px",
-    boxShadow: "4px 4px lightblue",
-  },
-}));
+
 export default function Hint() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -40,13 +26,14 @@ export default function Hint() {
 
   return (
     <div>
-      <HintButton
+      <Button
+      sx={HintStyles}
         onClick={handleOpen}
         variant="contained"
         size="medium"
       >
         Need some help? Click here for a Hint!
-      </HintButton>
+      </Button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

@@ -2,7 +2,7 @@ import * as React from "react";
 import Stack from "@mui/material/Stack";
 import Hint from "./Hint";
 import Image from "./Image";
-import CorrectAnswer from "./CorrectAnswer";
+import Answer from "./Answer";
 import Question3 from "./Question3";
 
 function Quiz3() {
@@ -27,7 +27,7 @@ function Quiz3() {
             alignItems="center"
           >
             <Question3 />
-            <CorrectAnswer />
+            <Answer />
           </Stack>
           <Hint />
         </Stack>

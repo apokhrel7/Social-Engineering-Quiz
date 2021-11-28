@@ -1,65 +1,14 @@
-import { Button } from "@material-ui/core";
 import * as React from "react";
-import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
 import NextQuestion from "./NextQuestion";
-import { blue, green } from "@material-ui/core/colors";
-import { red } from "@material-ui/core/colors";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-
-const AnswerButton = styled(Button)(({ theme }) => ({
-  color: "white",
-  backgroundColor: blue[700],
-  borderRadius: 12,
-  maxWidth: "250px",
-  maxHeight: "50px",
-  minWidth: "250px",
-  minHeight: "50px",
-  "&:hover": {
-    backgroundColor: blue[900],
-    padding: "10px",
-    boxShadow: "4px 4px lightblue",
-  },
-}));
-
-const CorrectButton = styled(Button)(({ theme }) => ({
-  color: "white",
-  backgroundColor: green[700],
-  borderRadius: 12,
-  maxWidth: "250px",
-  maxHeight: "50px",
-  minWidth: "250px",
-  minHeight: "50px",
-  "&:hover": {
-    backgroundColor: green[700],
-  },
-}));
-
-const WrongButton = styled(Button)(({ theme }) => ({
-  color: "white",
-  backgroundColor: red[700],
-  borderRadius: 12,
-  maxWidth: "250px",
-  maxHeight: "50px",
-  minWidth: "250px",
-  minHeight: "50px",
-  "&:hover": {
-    backgroundColor: red[700],
-  },
-}));
-
-const DisableButton = styled(Button)(({ theme }) => ({
-  color: "white",
-  backgroundColor: blue[600],
-  borderRadius: 12,
-  maxWidth: "250px",
-  maxHeight: "50px",
-  minWidth: "250px",
-  minHeight: "50px",
-  "&:hover": {
-    backgroundColor: blue[600],
-  },
-}));
+import {
+  AnswerStyles,
+  CorrectStyles,
+  DisableStyles,
+  WrongStyles,
+} from "./Styling";
 
 function CorrectAnswer() {
   const [correctFlag, setcorrectFlag] = React.useState(true);
@@ -95,42 +44,44 @@ function CorrectAnswer() {
       >
         {disableCorrectFlag ? (
           !correctFlag ? (
-            <CorrectButton variant="contained" size="medium">
+            <Button sx={CorrectStyles} variant="contained" size="medium">
               <Typography style={{ fontWeight: 600 }}>correct!</Typography>
-            </CorrectButton>
+            </Button>
           ) : (
-            <AnswerButton
+            <Button
+              sx={AnswerStyles}
               onClick={handleClickCorrect}
               variant="contained"
               size="medium"
             >
               <Typography style={{ fontWeight: 600 }}>scam!</Typography>
-            </AnswerButton>
+            </Button>
           )
         ) : (
-          <DisableButton variant="contained" size="medium">
+          <Button sx={DisableStyles} variant="contained" size="medium">
             <Typography style={{ fontWeight: 600 }}>scam!</Typography>
-          </DisableButton>
+          </Button>
         )}
 
         {disableWrongFlag ? (
           !wrongFlag ? (
-            <WrongButton variant="contained" size="medium">
+            <Button sx={WrongStyles} variant="contained" size="medium">
               <Typography style={{ fontWeight: 600 }}>Wrong!</Typography>
-            </WrongButton>
+            </Button>
           ) : (
-            <AnswerButton
+            <Button
+              sx={AnswerStyles}
               onClick={handleClickWrong}
               variant="contained"
               size="medium"
             >
               <Typography style={{ fontWeight: 600 }}>seems legit!</Typography>
-            </AnswerButton>
+            </Button>
           )
         ) : (
-          <DisableButton variant="contained" size="medium">
+          <Button sx={DisableStyles} variant="contained" size="medium">
             <Typography style={{ fontWeight: 600 }}>seems legit!</Typography>
-          </DisableButton>
+          </Button>
         )}
       </Stack>
       {!next ? (
