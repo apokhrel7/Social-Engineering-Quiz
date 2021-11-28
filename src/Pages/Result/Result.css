@@ -7,5 +7,9 @@
 }
 .title {
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 55px;
+  font-weight: 600;
+}
+.button {
+  font-size: 18px;
 }

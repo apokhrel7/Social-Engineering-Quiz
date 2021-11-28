@@ -36,6 +36,9 @@ const Home = () => {
         color="primary"
         size="large"
         onClick={sendSubmit}
+        style={{
+          fontWeight: 600,
+        }}
       >
         Start Quiz
       </Button>

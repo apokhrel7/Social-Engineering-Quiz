@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Result.css";
 
-const Result = ({ name, score }) => {
+const Result = ({ score }) => {
   const navigate = useNavigate();
 
   const useEffect = () => {
@@ -12,15 +12,22 @@ const Result = ({ name, score }) => {
 
   return (
     <div className="result">
-      <span className="title">Final Score : {score}</span>
+      <span className="title">Final Score : 4/5</span>
       <Button
         variant="contained"
-        color="secondary"
-        size="large"
-        style={{ alignSelf: "center", marginTop: 20 }}
+        color="primary"
+        style={{
+          height: 50,
+          width: 290,
+          alignSelf: "center",
+          fontSize: "15px",
+          fontWeight: 600,
+          marginTop: 20,
+        }}
         href="/"
+        className="buatton"
       >
-        Go to homepage
+        Return back to homepage
       </Button>
     </div>
   );
