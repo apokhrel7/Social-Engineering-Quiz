@@ -4,7 +4,6 @@ import { styled } from "@mui/material/styles";
 import { purple } from "@mui/material/colors";
 import { useNavigate } from "react-router-dom";
 
-
 const NextQuestionButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(purple[500]),
   backgroundColor: purple[500],
@@ -13,7 +12,7 @@ const NextQuestionButton = styled(Button)(({ theme }) => ({
   maxHeight: "45px",
   minWidth: "600px",
   minHeight: "45px",
-  
+
   "&:hover": {
     backgroundColor: purple[700],
     padding: "10px",
@@ -25,14 +24,10 @@ function NextQuestion() {
   const navigate = useNavigate();
 
   const sendSubmit = () => {
-    navigate("/quiz4");
+    navigate("/quiz2");
   };
   return (
-    <NextQuestionButton
-      onClick={sendSubmit}
-      variant="contained"
-      size="medium"
-    >
+    <NextQuestionButton onClick={sendSubmit} variant="contained" size="medium">
       Next Question
     </NextQuestionButton>
   );
