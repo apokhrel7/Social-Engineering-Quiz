@@ -24,7 +24,7 @@ function NextQuestion() {
   const navigate = useNavigate();
 
   const sendSubmit = () => {
-    navigate("/quiz2");
+    navigate("/result");
   };
   return (
     <NextQuestionButton onClick={sendSubmit} variant="contained" size="medium">
