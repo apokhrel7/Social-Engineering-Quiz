@@ -12,10 +12,10 @@ import CardMedia from "@mui/material/CardMedia";
 import { createTheme } from '@mui/material/styles';
 import styles from'./Quiz5.css'; */
 
-import * as React from "react"
+import * as React from "react";
 import Button from "@mui/material/Button";
-import NextQuestion from '../../Pages/Quiz3/NextQuestion';
-import Hint from '../../Pages/Quiz3/Hint';
+import NextQuestion from "../../Pages/Quiz3/NextQuestion";
+import Hint from "../../Pages/Quiz3/Hint";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
@@ -26,26 +26,28 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import { Container } from "@material-ui/core";
 
+import {
+  useScoreContext,
+  useUpdateScoreContext,
+} from "../../components/Context/ResultContext";
 
-
-
-
-
-import { useScoreContext, useUpdateScoreContext } from '../../components/Context/ResultContext';
-
-import {useResponseContext, useUpdateResponseContext} from '../../components/Context/ResultContext';
+import {
+  useResponseContext,
+  useUpdateResponseContext,
+} from "../../components/Context/ResultContext";
 
 // Temporary ------------------------------------------------------------
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 // ----------------------------------------------------------------------
 
 import {
-    AnswerStyles,
-    CorrectStyles,
-    DisableStyles,
-    WrongStyles,
-  } from "../Quiz3/Styling";
-import { HintStyles } from "../Quiz3/Styling";
+  AnswerStyles,
+  CorrectStyles,
+  DisableStyles,
+  WrongStyles,
+  HintStyles,
+  NextQuestionStyles,
+} from "./Styling5";
 
 const style = {
   position: "absolute",
@@ -60,7 +62,6 @@ const style = {
 };
 
 export default function Quiz5() {
-
   // Temporary ----------------------------------------------------------
   const navigate = useNavigate();
   // --------------------------------------------------------------------
@@ -104,27 +105,27 @@ export default function Quiz5() {
   return (
     <Container>
       <Stack
-      direction="column"
-      justifyContent="center"
-      alignItems="center"
-      spacing={3}
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        spacing={3}
       >
         <Stack
-          backgroundColor= "white"
-          boxShadow= "4px 4px lightblue"
-          borderRadius= "7px"
-          padding= "24px"
-          fontSize= "0.875rem"
-          boxSizing= "border-box"
-          letterSpacing= "0.01071em"
-          borderWidth= "1"
-          lineHeight= "1.43"
+          backgroundColor="white"
+          boxShadow="4px 4px lightblue"
+          borderRadius="7px"
+          padding="24px"
+          fontSize="0.875rem"
+          boxSizing="border-box"
+          letterSpacing="0.01071em"
+          borderWidth="1"
+          lineHeight="1.43"
           direction="column"
           justifyContent="center"
           alignItems="center"
           spacing={3}
         >
-          <h1 >Which one is the fraudulent UofC login page?</h1>
+          <h1>Which one is the fraudulent UofC login page?</h1>
         </Stack>
         <Stack
           direction="column"
@@ -133,52 +134,52 @@ export default function Quiz5() {
           spacing={2}
         >
           <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={12}
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            spacing={12}
+          >
+            <Card
+              sx={{
+                marginTop: 1,
+                maxWidth: 600,
+                borderRadius: "24px",
+                padding: "10px",
+                boxShadow: "4px 4px lightblue",
+              }}
             >
-              <Card
-                sx={{
-                  marginTop: 1,
-                  maxWidth: 600,
-                  borderRadius: "24px",
-                  padding: "10px",
-                  boxShadow: "4px 4px lightblue",
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  padding="2.5rem 5.0rem"
-                  height="20%"
-                  width="100%"
-                  overflow="hidden"
-                  backgroundSize="cover"
-                  src="/Quiz5_scam.png"
-                  alt=""
-                />
-              </Card>
-              <Card
-                sx={{
-                  marginTop: 1,
-                  maxWidth: 600,
-                  borderRadius: "24px",
-                  borderRadius: 6,
-                  padding: "10px",
-                  boxShadow: "4px 4px lightblue",
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  padding="2.5rem 5.0rem"
-                  height="20%"
-                  width="100%"
-                  overflow="hidden"
-                  src="/Quiz5_real.png"
-                  alt=""
-                />
-              </Card>
-            </Stack>
+              <CardMedia
+                component="img"
+                padding="2.5rem 5.0rem"
+                height="20%"
+                width="100%"
+                overflow="hidden"
+                backgroundSize="cover"
+                src="/Quiz5_scam.png"
+                alt=""
+              />
+            </Card>
+            <Card
+              sx={{
+                marginTop: 1,
+                maxWidth: 600,
+                borderRadius: "24px",
+                borderRadius: 6,
+                padding: "10px",
+                boxShadow: "4px 4px lightblue",
+              }}
+            >
+              <CardMedia
+                component="img"
+                padding="2.5rem 5.0rem"
+                height="20%"
+                width="100%"
+                overflow="hidden"
+                src="/Quiz5_real.png"
+                alt=""
+              />
+            </Card>
+          </Stack>
           <Stack
             direction="row"
             justifyContent="center"
@@ -188,45 +189,43 @@ export default function Quiz5() {
             {disableCorrectFlag ? (
               !correctFlag ? (
                 <Button sx={CorrectStyles} variant="contained" size="medium">
-                <Typography style={{ fontWeight: 600 }}>Correct!</Typography>
-              </Button>
-
+                  <Typography style={{ fontWeight: 600 }}>Correct!</Typography>
+                </Button>
               ) : (
                 <Button
-                sx={AnswerStyles}
-                onClick={handleClickCorrect}
-                variant="contained"
-                size="medium"
-              >
+                  sx={AnswerStyles}
+                  onClick={handleClickCorrect}
+                  variant="contained"
+                  size="medium"
+                >
+                  <Typography style={{ fontWeight: 600 }}>A</Typography>
+                </Button>
+              )
+            ) : (
+              <Button sx={DisableStyles} variant="contained" size="medium">
                 <Typography style={{ fontWeight: 600 }}>A</Typography>
               </Button>
-                )
-              ) : (
-                <Button sx={DisableStyles} variant="contained" size="medium">
-                <Typography style={{ fontWeight: 600 }}>A</Typography>
-              </Button>
-
-              )}
+            )}
             {disableWrongFlag ? (
               !wrongFlag ? (
                 <Button sx={WrongStyles} variant="contained" size="medium">
-                <Typography style={{ fontWeight: 600 }}>Wrong!</Typography>
-              </Button>
+                  <Typography style={{ fontWeight: 600 }}>Wrong!</Typography>
+                </Button>
               ) : (
                 <Button
-                    sx={AnswerStyles}
-                    onClick={handleClickWrong}
-                    variant="contained"
-                    size="medium"
+                  sx={AnswerStyles}
+                  onClick={handleClickWrong}
+                  variant="contained"
+                  size="medium"
                 >
-                    <Typography style={{ fontWeight: 600 }}>B</Typography>
+                  <Typography style={{ fontWeight: 600 }}>B</Typography>
                 </Button>
-                )
-              ) : (
-                <Button sx={DisableStyles} variant="contained" size="medium">
+              )
+            ) : (
+              <Button sx={DisableStyles} variant="contained" size="medium">
                 <Typography style={{ fontWeight: 600 }}>B</Typography>
               </Button>
-              )}
+            )}
           </Stack>
           <Stack
             direction="row"
@@ -235,14 +234,14 @@ export default function Quiz5() {
             spacing={10}
           >
             <Button
-            sx={HintStyles}
-                onClick={handleOpen}
-                variant="contained"
-                size="medium"
+              sx={HintStyles}
+              onClick={handleOpen}
+              variant="contained"
+              size="medium"
             >
-            Hint
-             </Button>
-           
+              Hint
+            </Button>
+
             <Modal
               open={open}
               onClose={handleClose}
@@ -256,35 +255,35 @@ export default function Quiz5() {
                 <Box sx={style}>
                   <h2>Hint</h2>
                   <p>
-                    {''}
+                    {""}
                     Both images are very similar, so don't fall for looks!
-                    Instead, look carefully at the image URL.
-                    {' '}
-                    Notice how the left image has "cas.ucalgary.net" and
-                    some additional suspicious URL content. 
-              
-                    Therefore, the left image is a fraudulent login page!
+                    Instead, look carefully at the image URL. Notice how the
+                    left image has "cas.ucalgary.net" and some additional
+                    suspicious URL content. Therefore, the left image is a
+                    fraudulent login page!
                   </p>
                 </Box>
               </Fade>
             </Modal>
             {!next ? (
-                <NextQuestion />
-                ) : (
-                    <Button
-                    style={{
-                        height: 50,
-                        width: 150
-                    }}
-                    disabled
-                    variant="contained"
-                    size="medium"
-                  >
-                    Next Question
-                  </Button>
-                )}
-
-
+              <Button sx={NextQuestionStyles} variant="contained" size="medium">
+                Next Question
+              </Button>
+            ) : (
+              <Button
+                style={{
+                  maxWidth: "250px",
+                  maxHeight: "40px",
+                  minWidth: "250px",
+                  minHeight: "40px",
+                }}
+                disabled
+                variant="contained"
+                size="medium"
+              >
+                Next Question
+              </Button>
+            )}
           </Stack>
         </Stack>
       </Stack>
