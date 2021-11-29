@@ -2,8 +2,12 @@ import { Button } from "@material-ui/core";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Result.css";
+import { useScoreContext } from "../../components/Context/ResultContext";
+import { useResponseContext } from "../../components/Context/ResultContext";
 
-const Result = ({ score }) => {
+const Result = () => {
+  const score = useScoreContext();
+  const responses = useResponseContext();
   const navigate = useNavigate();
 
   const useEffect = () => {
@@ -12,7 +16,7 @@ const Result = ({ score }) => {
 
   return (
     <div className="result">
-      <span className="title">Final Score : 4/5</span>
+      <span className="title">Final Score : {score}/{responses}</span>
       <Button
         variant="contained"
         color="primary"

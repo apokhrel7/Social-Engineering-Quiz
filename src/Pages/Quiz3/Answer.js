@@ -3,6 +3,9 @@ import Button from "@mui/material/Button";
 import NextQuestion from "./NextQuestion";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { useScoreContext } from "../../components/Context/ResultContext";
+import { useUpdateScoreContext } from "../../components/Context/ResultContext";
+
 import {
   AnswerStyles,
   CorrectStyles,
@@ -17,6 +20,11 @@ function CorrectAnswer() {
   const [disableWrongFlag, setdisableWrongFlag] = React.useState(true);
   const [next, setNext] = React.useState(true);
 
+  // for updating score -------------------------------------------------
+  const score = useScoreContext();
+  const updateScore = useUpdateScoreContext();
+  // --------------------------------------------------------------------
+
   const handleClickWrong = () => {
     setWrongFlag(!wrongFlag);
     setNext(!next);
@@ -27,6 +35,8 @@ function CorrectAnswer() {
     setcorrectFlag(!correctFlag);
     setNext(!next);
     setdisableWrongFlag(!disableWrongFlag);
+    // next line is where we update the score
+    updateScore(Number(score) + 1);
   };
 
   return (

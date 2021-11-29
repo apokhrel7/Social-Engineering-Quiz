@@ -6,8 +6,10 @@ import Quiz1 from "./Pages/Quiz1/Quiz1";
 import Quiz3 from "./Pages/Quiz3/Quiz3";
 import Result from "./Pages/Result/Result";
 import "./App.css";
+import {ResultProvider} from './components/Context/ResultContext';
 function App() {
   return (
+    <ResultProvider scoreValue="0" responseValue="0">
     <BrowserRouter>
       <div className="App" style={{ backgroundImage: "url(./circle.jpg)" }}>
         <Header />
@@ -22,6 +24,7 @@ function App() {
       </div>
       <Footer />
     </BrowserRouter>
+    </ResultProvider>
   );
 }
 
