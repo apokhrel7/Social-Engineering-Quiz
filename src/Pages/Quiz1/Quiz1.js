@@ -12,6 +12,14 @@ import CardMedia from "@mui/material/CardMedia";
 import { createTheme } from '@mui/material/styles';
 import styles from'./Quiz1.module.css';
 
+import { useScoreContext, useUpdateScoreContext } from '../../components/Context/ResultContext';
+
+import {useResponseContext, useUpdateResponseContext} from '../../components/Context/ResultContext';
+
+// Temporary ------------------------------------------------------------
+import { useNavigate } from 'react-router-dom';
+// ----------------------------------------------------------------------
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -26,6 +34,10 @@ const style = {
 
 export default function Quiz1() {
 
+  // Temporary ----------------------------------------------------------
+  const navigate = useNavigate();
+  // --------------------------------------------------------------------
+
   const [correctFlag, setcorrectFlag] = React.useState(true);
   const [disableCorrectFlag, setdisableCorrectFlag] = React.useState(true);
   const [wrongFlag, setWrongFlag] = React.useState(true);
@@ -35,6 +47,14 @@ export default function Quiz1() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  // used for updating results ------------------------------------------
+  const score = useScoreContext();
+  const updateScore = useUpdateScoreContext();
+
+  const responses = useResponseContext();
+  const updateResponses = useUpdateResponseContext();
+  // --------------------------------------------------------------------
 
   const handleClickWrong = () => {
     setWrongFlag(!wrongFlag);
@@ -46,6 +66,12 @@ export default function Quiz1() {
     setcorrectFlag(!correctFlag);
     setNext(!next);
     setdisableWrongFlag(!disableWrongFlag);
+    updateScore(Number(score) + 1);
+  };
+
+  const handleNext = () => {
+    updateResponses(Number(responses) + 1);
+    navigate("/Quiz3");
   };
 
   return (
@@ -246,6 +272,7 @@ export default function Quiz1() {
                 variant="contained"
                 color="primary"
                 size="medium"
+                onClick={handleNext}
                 style={{ height: 50 }}
                 style={{ width: 150 }}
               >
