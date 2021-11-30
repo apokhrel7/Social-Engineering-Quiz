@@ -3,6 +3,7 @@ import Quiz3 from "../../Pages/Quiz3/Quiz3";
 import Quiz5 from "../../Pages/Quiz5/Quiz5";
 import Quiz6 from "../../Pages/Quiz6/Quiz6";
 import Quiz7 from "../../Pages/Quiz7/Quiz7";
+import Quiz8 from "../../Pages/Quiz8/Quiz8";
 import Result from "../../Pages/Result/Result";
 
  export const questionBank = {
@@ -11,6 +12,7 @@ import Result from "../../Pages/Result/Result";
     "2" : <Quiz5/>,
     "3" : <Quiz6/>,
     "4" : <Quiz7/>,
-    "5" : <Result/>
+    "5" : <Quiz8/>,
+    "6" : <Result/>
 };
 
