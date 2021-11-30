@@ -1,17 +1,3 @@
-/* import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Box from "@mui/material/Box";
-import Backdrop from "@mui/material/Backdrop";
-import Modal from "@mui/material/Modal";
-import Fade from "@mui/material/Fade";
-import Stack from "@mui/material/Stack";
-import { Button } from "@material-ui/core";
-import { Container } from "@material-ui/core";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import { createTheme } from '@mui/material/styles';
-import styles from'./Quiz5.css'; */
-
 import * as React from "react";
 import Button from "@mui/material/Button";
 import NextQuestion from "../../Pages/Quiz3/NextQuestion";
@@ -112,9 +98,10 @@ export default function Quiz5() {
       >
         <Stack
           backgroundColor="white"
-          boxShadow="4px 4px lightblue"
-          borderRadius="7px"
-          padding="24px"
+          boxShadow="0.5vh 1vh lightblue"
+          borderRadius="1vh"
+          padding="3.8vh"
+          //padding="24px"
           fontSize="0.875rem"
           boxSizing="border-box"
           letterSpacing="0.01071em"
@@ -142,10 +129,10 @@ export default function Quiz5() {
             <Card
               sx={{
                 marginTop: 1,
-                maxWidth: 600,
-                borderRadius: "24px",
-                padding: "10px",
-                boxShadow: "4px 4px lightblue",
+                maxWidth: 500,
+                borderRadius: "3vh",
+                padding: "1vh",
+                boxShadow: "1vh 1vh lightblue",
               }}
             >
               <CardMedia
@@ -162,11 +149,10 @@ export default function Quiz5() {
             <Card
               sx={{
                 marginTop: 1,
-                maxWidth: 600,
-                borderRadius: "24px",
-                borderRadius: 6,
-                padding: "10px",
-                boxShadow: "4px 4px lightblue",
+                maxWidth: 500,
+                borderRadius: "3vh",
+                padding: "1vh",
+                boxShadow: "1vh 1vh lightblue",
               }}
             >
               <CardMedia
@@ -184,7 +170,7 @@ export default function Quiz5() {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            spacing={60}
+            spacing={40}
           >
             {disableCorrectFlag ? (
               !correctFlag ? (
