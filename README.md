@@ -1,11 +1,30 @@
-# Getting Started with Create React App
+# CPSC 329 Unessay: Phising Quiz
+This is a phishing email quiz that tests if a user can differentiate between a phishing message and a legitimate message. 
 
+The user will be provided two types of questions: 
+1. Given two images, choose which one is the phising message and which is the legitimate message
+2. Given an image, choose whether it is a phising or a legitimate message
+
+Hints are provided for each question that are meant to assist the user in answering the qustions.\
+A result page will appear after the completion of the test, in which the test results are displayed.
+
+# Installation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+The following technologies were and tools were used to build our project:
+* React JS (JavaScript) 
+* Node.js 
+* CSS
+* HTML
 
-In the project directory, you can run:
+## Node.js
+First, you need to download [Node.js](https://nodejs.org/en/download/) (LTS version is recommended for most users)
 
+## Download Files From GitHub 
+Download all the files from GitHub (**note to authors**: insert link to build file here)
+
+## Run From Terminal
+Go to the root directory of the project and start the project using:
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -13,6 +32,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+
+## Other Available Scripts
 
 ### `npm test`
 
@@ -68,3 +90,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Authors
+This project was made by computer science undergraduate students from the University of Calgary
+as a required assignment for the CPSC 329 course. \
+List of authors and their GitHub accounts:
+* [Roberto](https://github.com/RobertZ225)
+* [Emir](https://github.com/emiravc)
+* [Joanne](https://github.com/Joey-mi)
+* [Amirreza](https://github.com/areza244)
+* [Anish](https://github.com/apokhrel7) 
