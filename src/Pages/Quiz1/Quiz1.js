@@ -86,7 +86,6 @@ export default function Quiz1() {
 
   const handleNext = () => {
     updateResponses(Number(responses) + 1);
-    navigate("/Quiz3");
   };
 
   return (
@@ -243,7 +242,7 @@ export default function Quiz1() {
               </Fade>
             </Modal>
             {!next ? (
-              <Button sx={NextQuestionStyles} variant="contained" size="medium">
+              <Button sx={NextQuestionStyles} variant="contained" onClick={handleNext} size="medium">
                 Next Question
               </Button>
             ) : (

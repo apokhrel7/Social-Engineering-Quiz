@@ -16,7 +16,6 @@ function NextQuestion() {
   const sendSubmit = () => {
     // the next line will increase the number of questions attempted
     updateResponse(Number(responses) + 1);
-    navigate("/result");
   };
   return (
     <Button
