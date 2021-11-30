@@ -1,8 +1,8 @@
 import * as React from "react";
 import Stack from "@mui/material/Stack";
-import Hint from "./Hint6";
-import Image from "./Image6";
-import Answer from "./Answer6";
+import Hint6 from "./Hint6";
+import Image6 from "./Image6";
+import Answer6 from "./Answer6";
 import Question6 from "./Question6";
 
 function Quiz6() {

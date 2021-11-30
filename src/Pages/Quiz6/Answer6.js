@@ -1,6 +1,6 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import NextQuestion from "./NextQuestion6";
+import NextQuestion6 from "./NextQuestion6";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useScoreContext } from "../../components/Context/ResultContext";
