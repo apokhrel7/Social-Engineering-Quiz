@@ -10,7 +10,7 @@ import { Container } from "@material-ui/core";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { createTheme } from "@mui/material/styles";
-import styles from "./Quiz1.module.css";
+import styles from "./Quiz7.module.css";
 import Typography from "@mui/material/Typography";
 
 
@@ -34,7 +34,7 @@ import {
   WrongStyles,
   HintStyles,
   NextQuestionStyles,
-} from "./Styling1";
+} from "./Styling7";
 
 const style = {
   position: "absolute",
@@ -48,7 +48,7 @@ const style = {
   p: 4,
 };
 
-export default function Quiz1() {
+export default function Quiz7() {
   // Temporary ----------------------------------------------------------
   const navigate = useNavigate();
   // --------------------------------------------------------------------
@@ -111,7 +111,7 @@ export default function Quiz1() {
           alignItems="center"
           spacing={3}
         >
-          <h1 className={styles.Q1title}>Which one is the scam?</h1>
+          <h1 className={styles.Q7title}>Which one is the scam?</h1>
         </Stack>
         <Stack
           direction="column"
@@ -141,7 +141,7 @@ export default function Quiz1() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/fake1.1.png"
+                src="/scam7.png"
                 alt=""
               />
             </Card>
@@ -160,7 +160,7 @@ export default function Quiz1() {
                 height="20%"
                 width="100%"
                 overflow="hidden"
-                src="/real1.1.png"
+                src="/real7.png"
                 alt=""
               />
             </Card>
