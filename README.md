@@ -21,6 +21,14 @@ The following technologies were and tools were used to build our project:
 - CSS
 - HTML
 
+## Node.js
+
+In order to launch our project, you need to download [Node.js](https://nodejs.org/en/download/) (LTS version is recommended for most users)
+
+## Download Files From GitHub
+
+Clone all the files from GitHub (**note to authors**: insert link to build file here)
+
 ## External Libaries
 
 If you have never used material-ui, execute the following commands in your terminal before starting our project :
@@ -30,14 +38,6 @@ npm install @material-ui/core
 npm install @material-ui/core @materiait-ui/icons
 npm install @emotion/react
 ```
-
-## Node.js
-
-In order to launch our project, you need to download [Node.js](https://nodejs.org/en/download/) (LTS version is recommended for most users)
-
-## Download Files From GitHub
-
-Clone all the files from GitHub (**note to authors**: insert link to build file here)
 
 ## Run From Terminal
 
