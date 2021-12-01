@@ -27,7 +27,7 @@ export default function Hint() {
   return (
     <div>
       <Button
-      sx={HintStyles}
+        sx={HintStyles}
         onClick={handleOpen}
         variant="contained"
         size="medium"
@@ -51,8 +51,7 @@ export default function Hint() {
               Hint:
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Sometimes there are very subtle differences between a real page
-              and a fake one like some words may not be what they seem!{" "}
+              .......{" "}
             </Typography>
           </Box>
         </Fade>

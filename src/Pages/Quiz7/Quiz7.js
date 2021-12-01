@@ -236,7 +236,7 @@ export default function Quiz7() {
                   <h2>Hint: </h2>
                   <p>
                     {" "}
-                    Look closely at the text, is there any grammatical errors?
+                    Look closely at the text, are there any grammatical errors?
                   </p>
                 </Box>
               </Fade>

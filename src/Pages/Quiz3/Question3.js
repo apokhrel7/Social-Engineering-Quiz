@@ -27,7 +27,7 @@ function Question3() {
     <Item>
       <ThemeProvider theme={theme}>
         <Typography style={{ fontWeight: 600 }}>
-          Is this the actual Gmail login page or are you being scammed?
+          Would you give a call to this person?
         </Typography>
       </ThemeProvider>
     </Item>

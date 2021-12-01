@@ -1,7 +1,7 @@
 import Card from "@mui/material/Card";
 import * as React from "react";
 import CardMedia from "@mui/material/CardMedia";
-import google from "./google.png"
+import google from "./fake_message.jpg";
 function Image() {
   return (
     <Card
@@ -12,12 +12,7 @@ function Image() {
         boxShadow: "4px 4px lightblue",
       }}
     >
-      <CardMedia
-        component="img"
-        height="500"
-        image={google}
-        alt="Image"
-      />
+      <CardMedia component="img" height="500" image={google} alt="Image" />
     </Card>
   );
 }

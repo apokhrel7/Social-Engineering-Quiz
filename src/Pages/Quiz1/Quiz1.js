@@ -140,7 +140,7 @@ export default function Quiz1() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/fake_etransfer.png"
+                src="/fake_transfer.jpg"
                 alt=""
               />
             </Card>
@@ -234,7 +234,8 @@ export default function Quiz1() {
                   <h2>Hint: </h2>
                   <p>
                     {" "}
-                    Look closely at the text, is there any grammatical errors?
+                    Look closely at the emails, are there any grammatical errors
+                    or does it look legitimate to you?
                   </p>
                 </Box>
               </Fade>

@@ -64,7 +64,7 @@ function CorrectAnswer() {
               variant="contained"
               size="medium"
             >
-              <Typography style={{ fontWeight: 600 }}>scam!</Typography>
+              <Typography style={{ fontWeight: 600 }}>No</Typography>
             </Button>
           )
         ) : (
@@ -85,7 +85,7 @@ function CorrectAnswer() {
               variant="contained"
               size="medium"
             >
-              <Typography style={{ fontWeight: 600 }}>seems legit!</Typography>
+              <Typography style={{ fontWeight: 600 }}>Yes</Typography>
             </Button>
           )
         ) : (

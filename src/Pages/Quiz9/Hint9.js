@@ -51,7 +51,7 @@ export default function Hint9() {
               Hint:
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Read the text carefully, there can be small differences!{" "}
+              Check the page carefully, there can be small differences!{" "}
             </Typography>
           </Box>
         </Fade>
