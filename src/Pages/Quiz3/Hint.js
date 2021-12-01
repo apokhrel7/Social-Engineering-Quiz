@@ -48,7 +48,9 @@ export default function Hint() {
         <Fade in={open}>
           <Box sx={style}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
-              Hint:
+              <h2>
+                <u>Hint:</u>
+              </h2>
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               .......{" "}
