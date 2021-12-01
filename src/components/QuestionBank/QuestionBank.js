@@ -1,4 +1,5 @@
 import Quiz1 from "../../Pages/Quiz1/Quiz1";
+import Quiz2 from "../../Pages/Quiz2/Quiz2";
 import Quiz3 from "../../Pages/Quiz3/Quiz3";
 import Quiz5 from "../../Pages/Quiz5/Quiz5";
 import Quiz6 from "../../Pages/Quiz6/Quiz6";
@@ -8,11 +9,12 @@ import Result from "../../Pages/Result/Result";
 
  export const questionBank = {
     "0" : <Quiz1/>,
-    "1" : <Quiz3/>,
-    "2" : <Quiz5/>,
-    "3" : <Quiz6/>,
-    "4" : <Quiz7/>,
-    "5" : <Quiz8/>,
-    "6" : <Result/>
+    "1" : <Quiz2/>,
+    "2" : <Quiz3/>,
+    "3" : <Quiz5/>,
+    "4" : <Quiz6/>,
+    "5" : <Quiz7/>,
+    "6" : <Quiz8/>,
+    "7" : <Result/>
 };
 
