@@ -41,6 +41,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
+  height: 200,
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -238,14 +239,12 @@ export default function Quiz5() {
             >
               <Fade in={open}>
                 <Box sx={style}>
-                  <h2>Hint</h2>
+                  <h2><u>Hint</u></h2>
                   <p>
-                    {""}
                     Both images are very similar, so don't fall for looks!
-                    Instead, look carefully at the image URL. Notice how the
-                    left image has "cas.ucalgary.net" and some additional
-                    suspicious URL content. Therefore, the left image is a
-                    fraudulent login page!
+                  </p>
+                  <p>
+                    Instead, compare both of the URLs.
                   </p>
                 </Box>
               </Fade>

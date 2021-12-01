@@ -49,11 +49,11 @@ export default function Hint() {
           <Box sx={style}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
               <h2>
-                <u>Hint:</u>
+                <u>Hint</u>
               </h2>
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              .......{" "}
+              This one of is a little bit tricky. Seems like the company "New Talent" is desparate for a new employee.
             </Typography>
           </Box>
         </Fade>

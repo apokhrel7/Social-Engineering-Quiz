@@ -27,7 +27,11 @@ function Question3() {
     <Item>
       <ThemeProvider theme={theme}>
         <Typography style={{ fontWeight: 600 }}>
-          Would you give a call to this person?
+        You signed up on the website "New Talent".  
+        </Typography>
+
+        <Typography style={{ fontWeight: 600 }}>
+        Couple weeks later, you get a few messages. Would you notify them?  
         </Typography>
       </ThemeProvider>
     </Item>

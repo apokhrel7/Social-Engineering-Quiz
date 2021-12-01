@@ -233,7 +233,7 @@ export default function Quiz7() {
             >
               <Fade in={open}>
                 <Box sx={style}>
-                  <h2>Hint: </h2>
+                <h2><u>Hint</u></h2>
                   <p>
                     {" "}
                     Look closely at the text, are there any grammatical errors?
