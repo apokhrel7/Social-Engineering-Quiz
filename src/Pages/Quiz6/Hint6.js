@@ -27,7 +27,7 @@ export default function Hint6() {
   return (
     <div>
       <Button
-      sx={HintStyles}
+        sx={HintStyles}
         onClick={handleOpen}
         variant="contained"
         size="medium"
@@ -51,8 +51,8 @@ export default function Hint6() {
               Hint:
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Sometimes there are very subtle differences between a real page
-              and a fake one like some words may not be what they seem!{" "}
+              Sometimes scammers have fake emails or ask personal information
+              via email. Look closely to grammar mistakes!{" "}
             </Typography>
           </Box>
         </Fade>

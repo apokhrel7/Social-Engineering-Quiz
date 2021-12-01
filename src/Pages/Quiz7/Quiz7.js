@@ -13,7 +13,6 @@ import { createTheme } from "@mui/material/styles";
 import styles from "./Quiz7.module.css";
 import Typography from "@mui/material/Typography";
 
-
 import {
   useScoreContext,
   useUpdateScoreContext,
@@ -111,7 +110,9 @@ export default function Quiz7() {
           alignItems="center"
           spacing={3}
         >
-          <h1 className={styles.Q7title}>Which one is the scam?</h1>
+          <h1 className={styles.Q7title}>
+            Which one is the actual spotify Login page?
+          </h1>
         </Stack>
         <Stack
           direction="column"
@@ -123,12 +124,12 @@ export default function Quiz7() {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            spacing={25}
+            spacing={20}
           >
             <Card
               sx={{
                 marginTop: "1vh",
-                maxWidth: "400vh",
+                maxWidth: "38vh",
                 borderRadius: "3.18vh",
                 padding: "1.33vh",
                 boxShadow: "0.53vh 0.53vh lightblue",
@@ -141,14 +142,14 @@ export default function Quiz7() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/scam7.png"
+                src="/fake_spotify7.png"
                 alt=""
               />
             </Card>
             <Card
               sx={{
                 marginTop: "1vh",
-                maxWidth: "400vh",
+                maxWidth: "38vh",
                 borderRadius: "3.18vh",
                 padding: "1.33vh",
                 boxShadow: "0.53vh 0.53vh lightblue",
@@ -160,7 +161,7 @@ export default function Quiz7() {
                 height="20%"
                 width="100%"
                 overflow="hidden"
-                src="/real7.png"
+                src="/actual7_spotify.png"
                 alt=""
               />
             </Card>
@@ -169,7 +170,7 @@ export default function Quiz7() {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            spacing={40}
+            spacing={24}
           >
             {disableCorrectFlag ? (
               !correctFlag ? (
@@ -241,7 +242,12 @@ export default function Quiz7() {
               </Fade>
             </Modal>
             {!next ? (
-              <Button sx={NextQuestionStyles} variant="contained" onClick={handleNext} size="medium">
+              <Button
+                sx={NextQuestionStyles}
+                variant="contained"
+                onClick={handleNext}
+                size="medium"
+              >
                 Next Question
               </Button>
             ) : (
