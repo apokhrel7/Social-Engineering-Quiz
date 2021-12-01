@@ -11,7 +11,7 @@ const Home = () => {
   };
   return (
     <Container className="content">
-      <h1 id="quiz-title">Phishing Quiz</h1>
+      <h1 id="quiz-title">Good luck ಠ_ಠ</h1>
       <h2 class="question-text">
         Do you think you can beat our phishing quiz?
       </h2>
