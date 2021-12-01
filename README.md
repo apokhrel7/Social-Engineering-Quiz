@@ -1,50 +1,80 @@
-# CPSC 329 Unessay: Phising Quiz
+# CPSC 329 Unessay: Social Engineering Quiz
 
-This is a phishing quiz that tests if a user can differentiate between a phishing scenery and a legitimate scenery. This quiz has been done as a Final Project for CPSC329 FALL 2021 Course.
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Tools and Technologies](#tools-and-technologies)
+- [Authors](#authors)
+  
+
+## Description
+Social Engineering Quiz is an app made with `React` that tests if a user can differentiate between a phishing scenery and a legitimate scenery. This quiz has been done as a Final Project for CPSC329 FALL 2021 Course.
 
 The user will be provided two types of questions:
-
 1. Given two images, choose which one is the phising message and which is the legitimate message
-2. Given an image, choose whether it is a phising or a legitimate message
+2. Given one image, choose whether it is a phising or a legitimate message
 
 Hints are provided for each question that are meant to assist the user in answering the qustions.\
 A result page will appear after the completion of the test, in which the test results are displayed.
 
-# Installation
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-The following technologies were and tools were used to build our project:
-
-- React JS (JavaScript)
+# Tools and Technologies
+The following technologies and tools were used to build our project:
+- ReactJS (JavaScript)
 - Node.js
 - CSS
 - HTML
 
-## Node.js
+# Installation
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Step 1: Node.js
 In order to launch our project, you need to download [Node.js](https://nodejs.org/en/download/) (LTS version is recommended for most users)
-
-## Download Files From GitHub
-
-Clone all the files from GitHub (**note to authors**: insert link to build file here)
-
-## External Libaries
-
-If you have never used material-ui, execute the following commands in your terminal before starting our project :
-
+\
+After that, open up your terminal and check if `Node` is installed:
 ```
-npm install @material-ui/core
-npm install @material-ui/core @materiait-ui/icons
-npm install @emotion/react
+$ node -v
+v16.13.0
+```
+Also, check if `npm` is installed, which comes with `Node`
+```
+$ npm -v
+8.1.0
 ```
 
-## Run From Terminal
+## Step 2: Clone GitHub Repository
+On your terminal, do the following to clone the repository:
+```
+$ git clone https://github.com/Joey-mi/unessay20/tree/main-page
+```
 
-Go to the root directory of the project and start the project using:
+## Step 3: Check JSON File
+Go to the ```package.json``` file in your local machine and make sure you have the following script properties:
+```javascript
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
+
+## Step 4: Install External Libaries
+If you have never used `material-ui`, execute the following commands in your terminal before starting our project :
+
+```
+$ npm install @material-ui/core
+$ npm install @material-ui/core @materiait-ui/icons
+$ npm install @emotion/react
+```
+
+## Step 5: Starting the App
+Go to the root directory of the project and run the app:
+```
+$ cd unessay20
+$ npm start             // do this inside the unessay20 directory
+```
 
 ### `npm start`
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
