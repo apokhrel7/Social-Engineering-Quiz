@@ -127,7 +127,7 @@ export default function Quiz1() {
             <Card
               sx={{
                 marginTop: "1vh",
-                maxWidth: "26vh",
+                maxWidth: "25vh",
                 borderRadius: "3.18vh",
                 padding: "1.33vh",
                 boxShadow: "0.53vh 0.53vh lightblue",
@@ -147,7 +147,7 @@ export default function Quiz1() {
             <Card
               sx={{
                 marginTop: "1vh",
-                maxWidth: "26vh",
+                maxWidth: "25vh",
                 borderRadius: "3.18vh",
                 padding: "1.33vh",
                 boxShadow: "0.53vh 0.53vh lightblue",

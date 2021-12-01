@@ -111,7 +111,7 @@ export default function Quiz7() {
           spacing={3}
         >
           <h1 className={styles.Q7title}>
-            Which one is the actual spotify Login page?
+            Which one is the scam Spotify Login page?
           </h1>
         </Stack>
         <Stack
