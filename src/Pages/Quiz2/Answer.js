@@ -52,27 +52,6 @@ function CorrectAnswer() {
         justifyContent="center"
         alignItems="center"
       >
-        {disableCorrectFlag ? (
-          !correctFlag ? (
-            <Button sx={CorrectStyles} variant="contained" size="medium">
-              <Typography style={{ fontWeight: 600 }}>correct!</Typography>
-            </Button>
-          ) : (
-            <Button
-              sx={AnswerStyles}
-              onClick={handleClickCorrect}
-              variant="contained"
-              size="medium"
-            >
-              <Typography style={{ fontWeight: 600 }}>scam!</Typography>
-            </Button>
-          )
-        ) : (
-          <Button sx={DisableStyles} variant="contained" size="medium">
-            <Typography style={{ fontWeight: 600 }}>scam!</Typography>
-          </Button>
-        )}
-
         {disableWrongFlag ? (
           !wrongFlag ? (
             <Button sx={WrongStyles} variant="contained" size="medium">
@@ -85,12 +64,33 @@ function CorrectAnswer() {
               variant="contained"
               size="medium"
             >
-              <Typography style={{ fontWeight: 600 }}>seems legit!</Typography>
+              <Typography style={{ fontWeight: 600 }}>Trust!</Typography>
             </Button>
           )
         ) : (
           <Button sx={DisableStyles} variant="contained" size="medium">
-            <Typography style={{ fontWeight: 600 }}>seems legit!</Typography>
+            <Typography style={{ fontWeight: 600 }}>Trust!</Typography>
+          </Button>
+        )}
+
+        {disableCorrectFlag ? (
+          !correctFlag ? (
+            <Button sx={CorrectStyles} variant="contained" size="medium">
+              <Typography style={{ fontWeight: 600 }}>Right!</Typography>
+            </Button>
+          ) : (
+            <Button
+              sx={AnswerStyles}
+              onClick={handleClickCorrect}
+              variant="contained"
+              size="medium"
+            >
+              <Typography style={{ fontWeight: 600 }}>don't trust!</Typography>
+            </Button>
+          )
+        ) : (
+          <Button sx={DisableStyles} variant="contained" size="medium">
+            <Typography style={{ fontWeight: 600 }}>don't trust!</Typography>
           </Button>
         )}
       </Stack>

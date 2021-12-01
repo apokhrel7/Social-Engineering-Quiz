@@ -2,6 +2,7 @@ import Card from "@mui/material/Card";
 import * as React from "react";
 import CardMedia from "@mui/material/CardMedia";
 import image from "./Image2.png";
+import { borderRadius } from "@mui/system";
 function Image() {
   return (
     <Card
@@ -15,6 +16,7 @@ function Image() {
       <CardMedia
         component="img"
         height="500"
+        style={{borderRadius :"10px"}}
         image={image}
         alt="Image"
       />
