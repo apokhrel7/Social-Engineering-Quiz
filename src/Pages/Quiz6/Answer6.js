@@ -52,15 +52,15 @@ function CorrectAnswer() {
         justifyContent="center"
         alignItems="center"
       >
-        {disableCorrectFlag ? (
-          !correctFlag ? (
-            <Button sx={CorrectStyles} variant="contained" size="medium">
-              <Typography style={{ fontWeight: 600 }}>correct!</Typography>
+        {disableWrongFlag ? (
+          !wrongFlag ? (
+            <Button sx={WrongStyles} variant="contained" size="medium">
+              <Typography style={{ fontWeight: 600 }}>Wrong!</Typography>
             </Button>
           ) : (
             <Button
               sx={AnswerStyles}
-              onClick={handleClickCorrect}
+              onClick={handleClickWrong}
               variant="contained"
               size="medium"
             >
@@ -73,15 +73,15 @@ function CorrectAnswer() {
           </Button>
         )}
 
-        {disableWrongFlag ? (
-          !wrongFlag ? (
-            <Button sx={WrongStyles} variant="contained" size="medium">
-              <Typography style={{ fontWeight: 600 }}>Wrong!</Typography>
+        {disableCorrectFlag ? (
+          !correctFlag ? (
+            <Button sx={CorrectStyles} variant="contained" size="medium">
+              <Typography style={{ fontWeight: 600 }}>correct!</Typography>
             </Button>
           ) : (
             <Button
               sx={AnswerStyles}
-              onClick={handleClickWrong}
+              onClick={handleClickCorrect}
               variant="contained"
               size="medium"
             >

@@ -51,8 +51,8 @@ export default function Hint6() {
               Hint:
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Sometimes scammers have fake emails or ask personal information
-              via email. Look closely to grammar mistakes!{" "}
+              Look at the sender's email address and the body!
+              Is it professional? {" "}
             </Typography>
           </Box>
         </Fade>
