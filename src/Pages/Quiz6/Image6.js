@@ -1,7 +1,7 @@
 import Card from "@mui/material/Card";
 import * as React from "react";
 import CardMedia from "@mui/material/CardMedia";
-import acourtScam from "./scam6.png"
+import realAB from "./real6.1.jpg"
 function Image6() {
   return (
     <Card
@@ -15,7 +15,7 @@ function Image6() {
       <CardMedia
         component="img"
         height="500"
-        image={acourtScam}
+        image={realAB}
         alt="Image"
       />
     </Card>

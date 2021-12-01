@@ -13,7 +13,6 @@ import { createTheme } from "@mui/material/styles";
 import styles from "./Quiz1.module.css";
 import Typography from "@mui/material/Typography";
 
-
 import {
   useScoreContext,
   useUpdateScoreContext,
@@ -128,7 +127,7 @@ export default function Quiz1() {
             <Card
               sx={{
                 marginTop: "1vh",
-                maxWidth: "400vh",
+                maxWidth: "26vh",
                 borderRadius: "3.18vh",
                 padding: "1.33vh",
                 boxShadow: "0.53vh 0.53vh lightblue",
@@ -141,14 +140,14 @@ export default function Quiz1() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/fake1.1.png"
+                src="/fake_etransfer.png"
                 alt=""
               />
             </Card>
             <Card
               sx={{
                 marginTop: "1vh",
-                maxWidth: "400vh",
+                maxWidth: "26vh",
                 borderRadius: "3.18vh",
                 padding: "1.33vh",
                 boxShadow: "0.53vh 0.53vh lightblue",
@@ -160,7 +159,7 @@ export default function Quiz1() {
                 height="20%"
                 width="100%"
                 overflow="hidden"
-                src="/real1.1.png"
+                src="/real_etransfer.jpg"
                 alt=""
               />
             </Card>
@@ -169,7 +168,7 @@ export default function Quiz1() {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            spacing={40}
+            spacing={23}
           >
             {disableCorrectFlag ? (
               !correctFlag ? (
@@ -241,7 +240,12 @@ export default function Quiz1() {
               </Fade>
             </Modal>
             {!next ? (
-              <Button sx={NextQuestionStyles} variant="contained" onClick={handleNext} size="medium">
+              <Button
+                sx={NextQuestionStyles}
+                variant="contained"
+                onClick={handleNext}
+                size="medium"
+              >
                 Next Question
               </Button>
             ) : (
