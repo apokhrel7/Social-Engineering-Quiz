@@ -28,7 +28,7 @@ const Result = () => {
           fontWeight: 600,
           marginTop: 20,
         }}
-        href="/"
+        onClick={useEffect}
         className="buatton"
       >
         Return back to homepage
