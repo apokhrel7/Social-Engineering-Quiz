@@ -1,12 +1,23 @@
 import { Button } from "@material-ui/core";
 import { Container } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
+import { useUpdateResponseContext } from "../../components/Context/ResultContext";
+import { useUpdateScoreContext } from "../../components/Context/ResultContext";
 import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
 
+  const updateResponse = useUpdateResponseContext();
+  const updateScore = useUpdateScoreContext();
+
+  const resetCounter = () => {
+    updateResponse(0);
+    updateScore(0);
+  }
+
   const sendSubmit = () => {
+    resetCounter();
     navigate("/quiz");
   };
   return (
