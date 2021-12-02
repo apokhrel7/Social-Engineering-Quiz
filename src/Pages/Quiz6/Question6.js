@@ -27,7 +27,7 @@ function Question6() {
     <Item>
       <ThemeProvider theme={theme}>
         <Typography style={{ fontWeight: 600 }}>
-          Is this a legitimate email from Alberta Government or are you being scammed?
+          Is this a legitimate email from Scotiabank or are you being scammed?
         </Typography>
       </ThemeProvider>
     </Item>
