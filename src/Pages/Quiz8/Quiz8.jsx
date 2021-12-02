@@ -1,6 +1,6 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-//import NextQuestion from "../../Pages/Quiz3/NextQuestion";  // not used 
+//import NextQuestion from "../../Pages/Quiz3/NextQuestion";  // not used
 //import Hint from "../../Pages/Quiz3/Hint";                  // not used
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -11,6 +11,8 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import { Container } from "@material-ui/core";
+import image1 from "./Quiz8_real.PNG";
+import image2 from "./Quiz8_scam.PNG";
 
 import {
   useScoreContext,
@@ -47,9 +49,6 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-
-
-
 
 export default function Quiz8() {
   // Temporary ----------------------------------------------------------
@@ -91,7 +90,6 @@ export default function Quiz8() {
     updateResponses(Number(responses) + 1);
   };
 
-
   return (
     <Container>
       <Stack
@@ -116,7 +114,9 @@ export default function Quiz8() {
           alignItems="center"
           spacing={3}
         >
-          <h1>Here are two emails from the CIBC. Which one is actually from CIBC?</h1>
+          <h1>
+            Here are two emails from the CIBC. Which one is actually from CIBC?
+          </h1>
         </Stack>
         <Stack
           direction="column"
@@ -146,7 +146,7 @@ export default function Quiz8() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/Quiz8_scam.png"
+                image={image2}
                 alt=""
               />
             </Card>
@@ -165,7 +165,7 @@ export default function Quiz8() {
                 height="20%"
                 width="100%"
                 overflow="hidden"
-                src="/Quiz8_real.png" 
+                image={image1}
                 alt=""
               />
             </Card>
@@ -243,18 +243,24 @@ export default function Quiz8() {
             >
               <Fade in={open}>
                 <Box sx={style}>
-                  <h1><u>Hint</u></h1>
+                  <h1>
+                    <u>Hint</u>
+                  </h1>
 
-                  <p>              
-                    Focus on the email of the sender in both images.
-                    Notice anything suspicious about one of the emails?
-                    
+                  <p>
+                    Focus on the email of the sender in both images. Notice
+                    anything suspicious about one of the emails?
                   </p>
                 </Box>
               </Fade>
             </Modal>
             {!next ? (
-              <Button sx={NextQuestionStyles} variant="contained" onClick={handleNext} size="medium">
+              <Button
+                sx={NextQuestionStyles}
+                variant="contained"
+                onClick={handleNext}
+                size="medium"
+              >
                 Next Question
               </Button>
             ) : (

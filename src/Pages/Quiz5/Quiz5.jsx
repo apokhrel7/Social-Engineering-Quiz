@@ -11,6 +11,8 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import { Container } from "@material-ui/core";
+import image1 from "./Quiz5_real.PNG";
+import image2 from "./Quiz5_scam.PNG";
 
 import {
   useScoreContext,
@@ -142,7 +144,7 @@ export default function Quiz5() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/Quiz5_scam.png"
+                image={image2}
                 alt=""
               />
             </Card>
@@ -161,7 +163,7 @@ export default function Quiz5() {
                 height="20%"
                 width="100%"
                 overflow="hidden"
-                src="/Quiz5_real.png"
+                image={image1}
                 alt=""
               />
             </Card>
@@ -239,18 +241,21 @@ export default function Quiz5() {
             >
               <Fade in={open}>
                 <Box sx={style}>
-                  <h2><u>Hint</u></h2>
-                  <p>
-                    Both images are very similar, so don't fall for looks!
-                  </p>
-                  <p>
-                    Instead, compare both of the URLs.
-                  </p>
+                  <h2>
+                    <u>Hint</u>
+                  </h2>
+                  <p>Both images are very similar, so don't fall for looks!</p>
+                  <p>Instead, compare both of the URLs.</p>
                 </Box>
               </Fade>
             </Modal>
             {!next ? (
-              <Button sx={NextQuestionStyles} variant="contained" onClick={handleNext} size="medium">
+              <Button
+                sx={NextQuestionStyles}
+                variant="contained"
+                onClick={handleNext}
+                size="medium"
+              >
                 Next Question
               </Button>
             ) : (

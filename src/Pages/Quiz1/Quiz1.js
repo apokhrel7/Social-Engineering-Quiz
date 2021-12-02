@@ -12,6 +12,8 @@ import CardMedia from "@mui/material/CardMedia";
 import { createTheme } from "@mui/material/styles";
 import styles from "./Quiz1.module.css";
 import Typography from "@mui/material/Typography";
+import image1 from "./real_etransfer.jpg";
+import image2 from "./fake_transfer.jpg";
 
 import {
   useScoreContext,
@@ -140,7 +142,7 @@ export default function Quiz1() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/fake_transfer.jpg"
+                image={image2}
                 alt=""
               />
             </Card>
@@ -159,7 +161,7 @@ export default function Quiz1() {
                 height="20%"
                 width="100%"
                 overflow="hidden"
-                src="/real_etransfer.jpg"
+                image={image1}
                 alt=""
               />
             </Card>
@@ -231,7 +233,9 @@ export default function Quiz1() {
             >
               <Fade in={open}>
                 <Box sx={style}>
-                <h2><u>Hint</u></h2>
+                  <h2>
+                    <u>Hint</u>
+                  </h2>
                   <p>
                     {" "}
                     Look closely at the emails, are there any grammatical errors

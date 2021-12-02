@@ -12,7 +12,8 @@ import CardMedia from "@mui/material/CardMedia";
 import { createTheme } from "@mui/material/styles";
 import styles from "./Quiz7.module.css";
 import Typography from "@mui/material/Typography";
-
+import image1 from "./actual7_spotify.png";
+import image2 from "./fake_spotify7.png";
 import {
   useScoreContext,
   useUpdateScoreContext,
@@ -142,7 +143,7 @@ export default function Quiz7() {
                 width="100%"
                 overflow="hidden"
                 backgroundSize="cover"
-                src="/fake_spotify7.png"
+                image={image2}
                 alt=""
               />
             </Card>
@@ -161,7 +162,7 @@ export default function Quiz7() {
                 height="20%"
                 width="100%"
                 overflow="hidden"
-                src="/actual7_spotify.png"
+                image={image1}
                 alt=""
               />
             </Card>
@@ -233,7 +234,9 @@ export default function Quiz7() {
             >
               <Fade in={open}>
                 <Box sx={style}>
-                <h2><u>Hint</u></h2>
+                  <h2>
+                    <u>Hint</u>
+                  </h2>
                   <p>
                     {" "}
                     Look closely at the text, are there any grammatical errors?
