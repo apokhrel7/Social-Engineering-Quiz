@@ -16,7 +16,9 @@ const Result = () => {
 
   return (
     <div className="result">
-      <span className="title">Final Score : {score}/{responses}</span>
+      <span className="title">
+        Final Score : {score}/{responses}
+      </span>
       <Button
         variant="contained"
         color="primary"
@@ -29,7 +31,7 @@ const Result = () => {
           marginTop: 20,
         }}
         onClick={useEffect}
-        className="buatton"
+        className="button"
       >
         Return back to homepage
       </Button>
