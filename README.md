@@ -1,4 +1,4 @@
-# CPSC 329 Unessay: Social Engineering Quiz
+# CPSC 329 Final Project: Social Engineering Quiz
 
 ## Table of Contents
 - [Description](#description)
@@ -11,7 +11,7 @@
 Social Engineering Quiz is an app made with `React` that tests if a user can differentiate between a phishing scenery and a legitimate scenery. This quiz has been done as a Final Project for CPSC329 FALL 2021 Course.
 
 ### If you would like to see our live website please check: [Social-Engineering-Quiz-Website](https://emiravc.github.io/Social-Engineering-Quiz/)
-
+ 
 Note: Our web application is only compatible with computers. We currently do not support mobile devices.
 
 The user will be provided two types of questions:
@@ -20,6 +20,8 @@ The user will be provided two types of questions:
 
 Hints are provided for each question that are meant to assist the user in answering the qustions.\
 A result page will appear after the completion of the test, in which the test results are displayed.
+
+If you would like to see our repository for the live website please check: [Live-Page](https://github.com/emiravc/Social-Engineering-Quiz/tree/gh-pages)
 
 # Tools and Technologies
 The following technologies and tools were used to build our project:
