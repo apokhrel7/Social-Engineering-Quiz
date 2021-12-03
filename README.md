@@ -10,6 +10,10 @@
 ## Description
 Social Engineering Quiz is an app made with `React` that tests if a user can differentiate between a phishing scenery and a legitimate scenery. This quiz has been done as a Final Project for CPSC329 FALL 2021 Course.
 
+### If you would like to see our live website please check: [Social-Engineering-Quiz](https://emiravc.github.io/Social-Engineering-Quiz/)
+
+Note: Our web application is only compatible with computers. We currently do not support mobile devices.
+
 The user will be provided two types of questions:
 1. Given two images, choose which one is the phising message and which is the legitimate message
 2. Given one image, choose whether it is a phising or a legitimate message
