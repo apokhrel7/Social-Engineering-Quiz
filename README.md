@@ -1,4 +1,4 @@
-# CPSC 329 Final Project: Social Engineering Quiz
+# Social Engineering Quiz
 
 ## Table of Contents
 - [Description](#description)
@@ -58,7 +58,7 @@ $ npm -v
 ## Step 2: Clone GitHub Repository
 On your terminal, do the following to clone the repository:
 ```
-$ git clone https://github.com/Joey-mi/unessay20/tree/main-page
+$ git clone https://github.com/Joey-mi/social-engineering-quiz/tree/main-page
 ```
 
 ## Step 3: Check JSON File
@@ -72,20 +72,20 @@ Go to the ```package.json``` file in your local machine and make sure you have t
   },
 ```
 
-## Step 4: Install External Libaries
-If you have never used `material-ui`, execute the following commands in your terminal before starting our project :
+## Step 4: Install Dependencies
+Execute the following commands in your terminal before starting our project :
 
 ```
-$ npm install @material-ui/core
-$ npm install @material-ui/core @materiait-ui/icons
-$ npm install @emotion/react
+$ npm install
 ```
+This will download all the dependencies defined in the ```package.json``` file and into a ```node_modules``` folder.\
+This folder will created in the root directory of the ```social-engineering-quiz``` folder in your local machine
 
 ## Step 5: Starting the App
-Go to the root directory of the project and run the app:
+Go to the root directory of the project and then start the app:
 ```
-$ cd unessay20
-$ npm start             // do this inside the unessay20 directory
+$ cd social-engineering-quiz    // first, go to root directory of the project...
+$ npm start                     // then, start the app in the root directory
 ```
 
 ### `npm start`
