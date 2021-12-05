@@ -166,5 +166,5 @@ List of authors and their GitHub accounts:
 - [Amirreza Pazira](https://github.com/areza244)
 - [Anish Pokhrel](https://github.com/apokhrel7)
 
-## License 
+# License 
 [MIT](https://github.com/Joey-mi/Social-Engineering-Quiz/blob/main/LICENSE)
