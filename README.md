@@ -15,8 +15,7 @@ Social Engineering Quiz is an app made with `React` that tests if a user can dif
 https://user-images.githubusercontent.com/66049909/144729855-80fe4a1a-0276-424f-ae7b-145b5b7eafc3.mp4
 
 
-### If you would like to preview our live website please check: [Social-Engineering-Quiz-Website](https://emiravc.github.io/Social-Engineering-Quiz/)
- 
+### Click here to go to the quiz: [Social-Engineering-Quiz-Website](https://emiravc.github.io/Social-Engineering-Quiz/) 
 ### Note: Our web application is only compatible with computers. We currently do not support mobile devices.
 
 The user will be provided two types of questions:
