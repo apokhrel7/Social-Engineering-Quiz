@@ -15,11 +15,9 @@ https://user-images.githubusercontent.com/66049909/144729855-80fe4a1a-0276-424f-
 
 ### Click here to go to the quiz: [Social-Engineering-Quiz-Website](https://emiravc.github.io/Social-Engineering-Quiz/) 
 
-<span style="color:orange;">Word up</span>
-
 ### **<span style="color:red;">!!! Note !!!</span>** 
-**&emsp; &emsp; Our web application is only compatible with computers.**  
-**&emsp; &emsp; We currently do not support mobile devices.**
+- **Our web application is only compatible with computers.**  
+- **We currently do not support mobile devices.**
 
 The user will be provided two types of questions:
 1. Given two images, choose which one is the phising message and which is the legitimate message
