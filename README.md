@@ -5,6 +5,7 @@
 - [Installation](#installation)
 - [Tools and Technologies](#tools-and-technologies)
 - [Authors](#authors)
+- [License](#license)
   
 
 ## Description
@@ -164,3 +165,6 @@ List of authors and their GitHub accounts:
 - [Joanne Millard](https://github.com/Joey-mi)
 - [Amirreza Pazira](https://github.com/areza244)
 - [Anish Pokhrel](https://github.com/apokhrel7)
+
+## License 
+[MIT](https://github.com/Joey-mi/Social-Engineering-Quiz/blob/main/LICENSE)
