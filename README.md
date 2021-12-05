@@ -8,12 +8,10 @@
   
 
 ## Description
-Social Engineering Quiz is an app made with `React` that tests if a user can differentiate between a phishing scenery and a legitimate scenery. This quiz has been done as a Final Project for CPSC329 FALL 2021 Course.
-
+Social Engineering Quiz is an application made with `React` that test your ability to recognize and avoid scam/phishing messages. This quiz has been done as a Final Project for CPSC329 FALL 2021 Course.
 
 ### Here is a brief walkthrough of the quiz:
 https://user-images.githubusercontent.com/66049909/144729855-80fe4a1a-0276-424f-ae7b-145b5b7eafc3.mp4
-
 
 ### Click here to go to the quiz: [Social-Engineering-Quiz-Website](https://emiravc.github.io/Social-Engineering-Quiz/) 
 ### Note: Our web application is only compatible with computers. We currently do not support mobile devices.
@@ -35,7 +33,6 @@ The following technologies and tools were used to build our project:
 - HTML
 
 # Installation
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Step 1: Node.js
 In order to launch our project, you need to download [Node.js](https://nodejs.org/en/download/) (LTS version is recommended for most users)
@@ -148,8 +145,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# Authors
+### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+# Authors
 This project was made by Computer Science Undergraduate students from the University of Calgary
 as a final project for the CPSC 329 course. \
 List of authors and their GitHub accounts:
