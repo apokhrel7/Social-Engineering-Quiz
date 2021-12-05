@@ -14,7 +14,12 @@ Social Engineering Quiz is an application made with `React` that test your abili
 https://user-images.githubusercontent.com/66049909/144729855-80fe4a1a-0276-424f-ae7b-145b5b7eafc3.mp4
 
 ### Click here to go to the quiz: [Social-Engineering-Quiz-Website](https://emiravc.github.io/Social-Engineering-Quiz/) 
-### Note: Our web application is only compatible with computers. We currently do not support mobile devices.
+
+<span style="color:orange;">Word up</span>
+
+### **<span style="color:red;">!!! Note !!!</span>** 
+**&emsp; &emsp; Our web application is only compatible with computers.**  
+**&emsp; &emsp; We currently do not support mobile devices.**
 
 The user will be provided two types of questions:
 1. Given two images, choose which one is the phising message and which is the legitimate message
@@ -33,6 +38,9 @@ The following technologies and tools were used to build our project:
 - HTML
 
 # Installation
+### **<span style="color:red;">!!! Note !!!</span>** 
+- **This section is only necessary if you want to download the source code and run in it at localhost in your local device.**
+- **Otherwise, you can just go to the website provided here: [Social-Engineering-Quiz-Website](https://emiravc.github.io/Social-Engineering-Quiz/)**
 
 ## Step 1: Node.js
 In order to launch our project, you need to download [Node.js](https://nodejs.org/en/download/) (LTS version is recommended for most users)
