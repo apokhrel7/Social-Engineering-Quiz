@@ -5,6 +5,7 @@
 - [Installation](#installation)
 - [Tools and Technologies](#tools-and-technologies)
 - [Authors](#authors)
+- [Resources](#resources)
 - [License](#license)
   
 
@@ -175,6 +176,9 @@ List of authors and their GitHub accounts:
 - [Joanne Millard](https://github.com/Joey-mi)
 - [Amirreza Pazira](https://github.com/areza244)
 - [Anish Pokhrel](https://github.com/apokhrel7)
+
+# Resources
+- Our project was inspired by [Wandera's Phising Quiz](https://phishing-quiz.wandera.com/#!/)
 
 # License 
 [MIT](https://github.com/Joey-mi/Social-Engineering-Quiz/blob/main/LICENSE)
