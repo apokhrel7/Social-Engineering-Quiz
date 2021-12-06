@@ -14,6 +14,10 @@ import {
 } from "./Styling";
 
 function CorrectAnswer() {
+
+  // these are the flags that we will use to determine what the 
+  // page should do and what elements should be shown
+  
   const [correctFlag, setcorrectFlag] = React.useState(true);
   const [disableCorrectFlag, setdisableCorrectFlag] = React.useState(true);
   const [wrongFlag, setWrongFlag] = React.useState(true);
@@ -25,12 +29,14 @@ function CorrectAnswer() {
   const updateScore = useUpdateScoreContext();
   // --------------------------------------------------------------------
 
+  // this function will be run if the button containing the wrong option is chosen
   const handleClickWrong = () => {
     setWrongFlag(!wrongFlag);
     setNext(!next);
     setdisableCorrectFlag(!disableCorrectFlag);
   };
 
+  // this function will be run if the button containing the right option is chosen
   const handleClickCorrect = () => {
     setcorrectFlag(!correctFlag);
     setNext(!next);

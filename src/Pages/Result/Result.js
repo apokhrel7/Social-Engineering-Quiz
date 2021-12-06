@@ -6,8 +6,15 @@ import { useScoreContext } from "../../components/Context/ResultContext";
 import { useResponseContext } from "../../components/Context/ResultContext";
 
 const Result = () => {
+
+  // score will allow us to access the current score of the user within  this file
+  // responses will contain the number of questions attempted up to this point
+  // -----------------------------------------------------------------------------
   const score = useScoreContext();
   const responses = useResponseContext();
+  // -----------------------------------------------------------------------------
+
+  // navigate is a function that will allow us to navigate to the next page
   const navigate = useNavigate();
 
   const useEffect = () => {
